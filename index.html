@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronto Pizza – Pizzeria Ristorante da Fabio | Porlezza (CO)</title>
+    <meta name="description" content="Pronto Pizza a Porlezza (CO): pizzeria e ristorante italiano con pizze, pasta fresca, carne e pesce. Tradizione, sapore e un'accoglienza di casa. Chiama +39 0344 72393.">
+    <meta name="keywords" content="pizzeria Porlezza, ristorante Porlezza, Pronto Pizza, pizzeria Como, pizza Porlezza, Pronto Pizza da Fabio">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Pronto Pizza">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pronto Pizza – Pizzeria Ristorante a Porlezza">
+    <meta property="og:description" content="Pizza, pasta fresca e cucina italiana autentica nel cuore di Porlezza, sul Lago di Lugano.">
+    <meta property="og:image" content="img/esterno_1.jpg">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon minimale -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍕</text></svg>">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Pronto Pizza",
+        "image": "img/esterno_1.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via Giuseppe Garibaldi 31",
+            "addressLocality": "Porlezza",
+            "addressRegion": "CO",
+            "postalCode": "22018",
+            "addressCountry": "IT"
+        },
+        "telephone": "+390344 72393",
+        "servesCuisine": "Italiana, Pizzeria",
+        "priceRange": "€€",
+        "openingHours": [
+            "Tu-Su 12:00-14:00",
+            "Tu-Su 18:00-22:00"
+        ]
+    }
+    </script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header" id="top">
+    <div class="container header-inner">
+        <a href="#top" class="logo" aria-label="Pronto Pizza home">
+            <span class="logo-mark">🍕</span>
+            <span class="logo-text">
+                <span class="logo-title">Pronto Pizza</span>
+                <span class="logo-sub">Ristorante · Pizzeria · Bar</span>
+            </span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="primary-nav">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Navigazione principale">
+            <ul>
+                <li><a href="#chi-siamo" data-i18n="nav.about">Chi siamo</a></li>
+                <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
+                <li><a href="menu.html" data-i18n="nav.fullmenu">Listino completo</a></li>
+                <li><a href="#galleria" data-i18n="nav.gallery">Galleria</a></li>
+                <li><a href="#contatti" data-i18n="nav.contact">Contatti</a></li>
+            </ul>
+            <div class="lang-switcher" data-lang-switcher>
+                <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Lingua / Language">
+                    <span class="lang-flag">🇮🇹</span><span class="lang-code">IT</span><span class="lang-caret">▾</span>
+                </button>
+                <ul class="lang-menu" role="menu">
+                    <li><button type="button" data-lang="it" role="menuitem">🇮🇹 Italiano</button></li>
+                    <li><button type="button" data-lang="en" role="menuitem">🇬🇧 English</button></li>
+                    <li><button type="button" data-lang="de" role="menuitem">🇩🇪 Deutsch</button></li>
+                    <li><button type="button" data-lang="fr" role="menuitem">🇫🇷 Français</button></li>
+                </ul>
+            </div>
+            <a href="tel:+39034472393" class="btn btn-call nav-call"><span aria-hidden="true">📞 </span><span data-i18n="nav.call">Chiama</span></a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" aria-label="Benvenuti">
+    <div class="hero-bg" role="img" aria-label="Esterno della pizzeria Pronto Pizza a Porlezza"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Porlezza · Lago di Lugano</p>
+        <h1 data-i18n-html="hero.title">La pizza di casa,<br><em>come una volta.</em></h1>
+        <p class="hero-claim" data-i18n-html="hero.claim">Cucina italiana autentica, pasta fresca, pizze cotte al momento.<br>Un tavolo, un bicchiere di vino e la sensazione di essere a casa.</p>
+        <div class="hero-cta">
+            <a href="tel:+39034472393" class="btn btn-primary"><span aria-hidden="true">📞 </span><span data-i18n="hero.cta_call">Chiama ora</span></a>
+            <a href="#menu" class="btn btn-ghost" data-i18n="hero.cta_menu">Scopri il menu</a>
+        </div>
+        <p class="hero-hours"><span class="dot"></span> <span data-i18n="status.open_today">Aperto oggi 12:00–14:00 · 18:00–22:00</span></p>
+    </div>
+    <a href="#chi-siamo" class="scroll-down" aria-label="Scorri verso il basso">↓</a>
+</section>
+
+<!-- Chi siamo -->
+<section class="section about" id="chi-siamo">
+    <div class="container about-grid">
+        <div class="about-text">
+            <p class="eyebrow" data-i18n="about.eyebrow">La nostra storia</p>
+            <h2 data-i18n-html="about.title">Una pizzeria di paese,<br>nel cuore di Porlezza</h2>
+            <p class="lead" data-i18n="about.lead">Da anni Pronto Pizza — da Fabio — è un punto di ritrovo per chi vive a Porlezza e per chi è di passaggio sul lago. Entri, senti il profumo del forno, vedi la cucina a vista e ti siedi ai tavoli vicini come in una casa di famiglia.</p>
+            <p data-i18n="about.text">La nostra è cucina italiana schietta: pizze con impasto lavorato ogni giorno, pasta fresca, carne alla griglia, pesce del mercato. Niente effetti speciali, solo ingredienti buoni, ricette di sempre e l'accoglienza di chi ti conosce.</p>
+            <p class="handwritten" data-i18n-html="about.quote">“Buona pizza, buon vino,<br>e la serata è salva.”</p>
+        </div>
+        <div class="about-image">
+            <img src="img/interno_1.jpg" alt="Sala interna di Pronto Pizza con tavoli, quadri alle pareti e atmosfera familiare" loading="lazy">
+            <div class="image-badge" data-i18n="about.badge">Dal 1988 · Fabio & famiglia</div>
+        </div>
+    </div>
+</section>
+
+<!-- Specialità -->
+<section class="section features">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">🔥</div>
+                <h3 data-i18n="feat.1.title">Forno a legna</h3>
+                <p data-i18n="feat.1.text">Pizze cotte al momento, impasto maturato a lungo.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🍝</div>
+                <h3 data-i18n="feat.2.title">Pasta fresca</h3>
+                <p data-i18n="feat.2.text">Primi piatti della tradizione italiana, ogni giorno.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🥩</div>
+                <h3 data-i18n="feat.3.title">Carne & pesce</h3>
+                <p data-i18n="feat.3.text">Secondi di terra e di mare, semplici e genuini.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🏡</div>
+                <h3 data-i18n="feat.4.title">Aria di casa</h3>
+                <p data-i18n="feat.4.text">Accoglienza familiare, come una volta.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Menu preview -->
+<section class="section menu-section" id="menu">
+    <div class="container">
+        <div class="section-head">
+            <p class="eyebrow" data-i18n="preview.eyebrow">Il nostro menu</p>
+            <h2 data-i18n="preview.title">Un assaggio del listino</h2>
+            <p class="section-sub" data-i18n="preview.sub">Dalla pizza tradizionale alle specialità della casa. Ecco una selezione — il listino completo ti aspetta al tavolo.</p>
+        </div>
+
+        <div class="menu-grid">
+
+            <!-- Pizza Famiglia -->
+            <article class="menu-card menu-card--highlight">
+                <header class="menu-card-head">
+                    <h3><span aria-hidden="true">🍕 </span><span data-i18n="cat.family">Offerta Pizza Famiglia</span></h3>
+                    <span class="menu-tag" data-i18n="cat.family_tag">per 4 persone</span>
+                </header>
+                <ul class="menu-list">
+                    <li><span class="dish">Margherita</span><span class="dots"></span><span class="price">21,00 €</span></li>
+                    <li><span class="dish">Prosciutto</span><span class="dots"></span><span class="price">24,00 €</span></li>
+                    <li><span class="dish">Salame</span><span class="dots"></span><span class="price">24,00 €</span></li>
+                    <li><span class="dish">Napoli</span><span class="dots"></span><span class="price">27,00 €</span></li>
+                    <li><span class="dish">4 Stagioni</span><span class="dots"></span><span class="price">27,00 €</span></li>
+                    <li><span class="dish">Capricciosa</span><span class="dots"></span><span class="price">27,00 €</span></li>
+                    <li><span class="dish">4 Formaggi</span><span class="dots"></span><span class="price">27,00 €</span></li>
+                    <li><span class="dish">People</span><span class="dots"></span><span class="price">27,00 €</span></li>
+                    <li><span class="dish">Vegana</span><span class="dots"></span><span class="price">27,00 €</span></li>
+                </ul>
+            </article>
+
+            <!-- Primi -->
+            <article class="menu-card">
+                <header class="menu-card-head">
+                    <h3><span aria-hidden="true">🍝 </span><span data-i18n="cat.primi">Primi piatti</span></h3>
+                </header>
+                <ul class="menu-list">
+                    <li><span class="dish">Spaghetti al mare</span><span class="dots"></span><span class="price">15,00 €</span></li>
+                    <li><span class="dish">Spaghetti aglio, olio e peperoncino</span><span class="dots"></span><span class="price">9,50 €</span></li>
+                    <li><span class="dish">Spaghetti alla carbonara</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                    <li><span class="dish">Spaghetti alla pizzaiola</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                    <li><span class="dish">Spaghetti al nero di seppia</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                    <li><span class="dish">Tagliatelle alla matriciana</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                    <li><span class="dish">Penne all'arrabbiata</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                    <li><span class="dish">Gnocchi ai 4 formaggi</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                    <li><span class="dish">Risotti vari</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                </ul>
+            </article>
+
+            <!-- Carne & Pesce -->
+            <article class="menu-card">
+                <header class="menu-card-head">
+                    <h3><span aria-hidden="true">🥩 </span><span data-i18n="cat.carne">Carne & Pesce</span></h3>
+                </header>
+                <ul class="menu-list">
+                    <li><span class="dish">Tagliata di manzo</span><span class="dots"></span><span class="price">18,00 €</span></li>
+                    <li><span class="dish">Filetto ai ferri</span><span class="dots"></span><span class="price">18,00 €</span></li>
+                    <li><span class="dish">Scaloppine al limone</span><span class="dots"></span><span class="price">15,00 €</span></li>
+                    <li><span class="dish">Cotoletta alla milanese</span><span class="dots"></span><span class="price">15,00 €</span></li>
+                    <li><span class="dish">Frittura di pesce</span><span class="dots"></span><span class="price">17,00 €</span></li>
+                    <li><span class="dish">Branzino al forno</span><span class="dots"></span><span class="price">17,00 €</span></li>
+                </ul>
+            </article>
+
+        </div>
+
+        <div class="menu-cta">
+            <a href="menu.html" class="btn btn-primary" data-i18n="preview.full_btn">Vedi il listino completo</a>
+            <a href="tel:+39034472393" class="btn btn-ghost"><span aria-hidden="true">📞 </span><span data-i18n="preview.call_btn">Chiama per prenotare</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- Galleria -->
+<section class="section gallery" id="galleria">
+    <div class="container">
+        <div class="section-head">
+            <p class="eyebrow" data-i18n="gallery.eyebrow">Galleria</p>
+            <h2 data-i18n="gallery.title">Dentro il locale</h2>
+            <p class="section-sub" data-i18n="gallery.sub">Tavoli ravvicinati, lavagne scritte a mano, cucina a vista. Entra e respira l'aria di casa.</p>
+        </div>
+
+        <div class="gallery-grid gallery-grid--four">
+            <a href="img/pronto-pizza.jpg" class="gallery-item" data-caption="La facciata del locale in Via Garibaldi">
+                <img src="img/pronto-pizza.jpg" alt="Facciata di Pronto Pizza con insegna e bandiera italiana" loading="lazy">
+            </a>
+            <a href="img/esterno_1.jpg" class="gallery-item" data-caption="L'esterno del locale a Porlezza">
+                <img src="img/esterno_1.jpg" alt="Esterno di Pronto Pizza a Porlezza" loading="lazy">
+            </a>
+            <a href="img/photo0jpg.jpg" class="gallery-item" data-caption="La sala con le pareti in pietra">
+                <img src="img/photo0jpg.jpg" alt="Sala interna con pareti in pietra e tavoli" loading="lazy">
+            </a>
+            <a href="img/interno_1.jpg" class="gallery-item" data-caption="Il ristorante nel vivo della serata">
+                <img src="img/interno_1.jpg" alt="Il ristorante nel vivo della serata" loading="lazy">
+            </a>
+            <a href="img/caption.jpg" class="gallery-item" data-caption="La cucina a vista e i calzoni appena sfornati">
+                <img src="img/caption.jpg" alt="Calzoni appena sfornati in cucina" loading="lazy">
+            </a>
+            <a href="img/pronto-pizza-3.jpg" class="gallery-item" data-caption="Le nostre pizze cotte al momento">
+                <img src="img/pronto-pizza-3.jpg" alt="Due pizze al tavolo" loading="lazy">
+            </a>
+            <a href="img/interno_2.jpg" class="gallery-item" data-caption="Ambiente familiare">
+                <img src="img/interno_2.jpg" alt="Dettaglio dell'ambiente familiare" loading="lazy">
+            </a>
+            <a href="img/pronto-pizza-2.jpg" class="gallery-item" data-caption="Pasta fresca fatta in casa">
+                <img src="img/pronto-pizza-2.jpg" alt="Piatto di pasta fatta in casa" loading="lazy">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contatti -->
+<section class="section contact" id="contatti">
+    <div class="container contact-grid">
+        <div class="contact-info">
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contatti & orari</p>
+            <h2 data-i18n="contact.title">Vieni a trovarci</h2>
+            <p class="lead" data-i18n="contact.lead">Nel centro storico di Porlezza, a due passi dal lago. Per prenotare o ordinare una pizza d'asporto, basta una telefonata.</p>
+
+            <div class="info-block">
+                <h3><span aria-hidden="true">📍 </span><span data-i18n="contact.addr">Indirizzo</span></h3>
+                <p>Via Giuseppe Garibaldi 31<br>22018 Porlezza (CO), <span data-i18n="contact.italy">Italia</span></p>
+            </div>
+
+            <div class="info-block">
+                <h3><span aria-hidden="true">📞 </span><span data-i18n="contact.phone">Telefono</span></h3>
+                <p><a href="tel:+39034472393" class="phone-link">+39 0344 72393</a></p>
+            </div>
+
+            <div class="info-block">
+                <h3><span aria-hidden="true">🕒 </span><span data-i18n="contact.hours">Orari di apertura</span></h3>
+                <ul class="hours">
+                    <li><span data-i18n="day.mon">Lunedì</span><span class="closed" data-i18n="day.closed">Chiuso</span></li>
+                    <li><span data-i18n="day.tue">Martedì</span><span>12:00–14:00 · 18:00–22:00</span></li>
+                    <li><span data-i18n="day.wed">Mercoledì</span><span>12:00–14:00 · 18:00–22:00</span></li>
+                    <li><span data-i18n="day.thu">Giovedì</span><span>12:00–14:00 · 18:00–22:00</span></li>
+                    <li><span data-i18n="day.fri">Venerdì</span><span>12:00–14:00 · 18:00–22:00</span></li>
+                    <li><span data-i18n="day.sat">Sabato</span><span>12:00–14:00 · 18:00–22:00</span></li>
+                    <li><span data-i18n="day.sun">Domenica</span><span>12:00–14:00 · 18:00–22:00</span></li>
+                </ul>
+            </div>
+
+            <div class="socials">
+                <a href="https://www.facebook.com/ristoranteprontopizza/?locale=it_IT" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+                <a href="https://it.tripadvisor.ch/Restaurant_Review-g1077989-d3739338-Reviews-Ristorante_Pronto_Pizza_Da_Fabio-Porlezza_Province_of_Como_Lombardy.html" target="_blank" rel="noopener" aria-label="Tripadvisor">Tripadvisor</a>
+            </div>
+        </div>
+
+        <div class="contact-map">
+            <iframe
+                src="https://www.google.com/maps?q=Via+Giuseppe+Garibaldi+31,+22018+Porlezza+CO&output=embed"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mappa Pronto Pizza, Via Garibaldi 31, Porlezza">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Sticky call (mobile) -->
+<a href="tel:+39034472393" class="sticky-call" aria-label="Chiama Pronto Pizza">
+    <span>📞</span>
+</a>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h4>Pronto Pizza</h4>
+            <p data-i18n-html="footer.addr">Ristorante · Pizzeria · Bar<br>da Fabio — Via Garibaldi 31, Porlezza (CO)</p>
+        </div>
+        <div class="footer-col">
+            <h4 data-i18n="footer.contact">Contatti</h4>
+            <p><a href="tel:+39034472393">+39 0344 72393</a></p>
+        </div>
+        <div class="footer-col">
+            <h4 data-i18n="footer.social">Social</h4>
+            <p>
+                <a href="https://www.facebook.com/ristoranteprontopizza/?locale=it_IT" target="_blank" rel="noopener">Facebook</a><br>
+                <a href="https://it.tripadvisor.ch/Restaurant_Review-g1077989-d3739338-Reviews-Ristorante_Pronto_Pizza_Da_Fabio-Porlezza_Province_of_Como_Lombardy.html" target="_blank" rel="noopener">Tripadvisor</a>
+            </p>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© <span id="year">2026</span> Pronto Pizza — Via Garibaldi 31, Porlezza (CO). <span data-i18n="footer.rights">Tutti i diritti riservati.</span></p>
+    </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Chiudi">×</button>
+    <img src="" alt="" id="lightbox-img">
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/i18n.js"></script>
+</body>
+</html>

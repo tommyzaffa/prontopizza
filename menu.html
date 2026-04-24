@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu e Listino Prezzi – Pronto Pizza, Porlezza (CO)</title>
+    <meta name="description" content="Il menu completo di Pronto Pizza a Porlezza: pizze, primi piatti, carne, pesce, contorni e focacce. Prezzi e specialità della casa.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍕</text></svg>">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header" id="top">
+    <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="Pronto Pizza home">
+            <span class="logo-mark">🍕</span>
+            <span class="logo-text">
+                <span class="logo-title">Pronto Pizza</span>
+                <span class="logo-sub">Ristorante · Pizzeria · Bar</span>
+            </span>
+        </a>
+        <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="primary-nav">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Navigazione principale">
+            <ul>
+                <li><a href="index.html#chi-siamo" data-i18n="nav.about">Chi siamo</a></li>
+                <li><a href="index.html#menu" data-i18n="nav.menu">Menu</a></li>
+                <li><a href="menu.html" data-i18n="nav.fullmenu">Listino completo</a></li>
+                <li><a href="index.html#galleria" data-i18n="nav.gallery">Galleria</a></li>
+                <li><a href="index.html#contatti" data-i18n="nav.contact">Contatti</a></li>
+            </ul>
+            <div class="lang-switcher" data-lang-switcher>
+                <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Lingua / Language">
+                    <span class="lang-flag">🇮🇹</span><span class="lang-code">IT</span><span class="lang-caret">▾</span>
+                </button>
+                <ul class="lang-menu" role="menu">
+                    <li><button type="button" data-lang="it" role="menuitem">🇮🇹 Italiano</button></li>
+                    <li><button type="button" data-lang="en" role="menuitem">🇬🇧 English</button></li>
+                    <li><button type="button" data-lang="de" role="menuitem">🇩🇪 Deutsch</button></li>
+                    <li><button type="button" data-lang="fr" role="menuitem">🇫🇷 Français</button></li>
+                </ul>
+            </div>
+            <a href="tel:+39034472393" class="btn btn-call nav-call"><span aria-hidden="true">📞 </span><span data-i18n="nav.call">Chiama</span></a>
+        </nav>
+    </div>
+</header>
+
+<!-- Page hero -->
+<section class="page-hero">
+    <p class="eyebrow" data-i18n="page.eyebrow">Il nostro listino</p>
+    <h1 data-i18n="page.title">Menu & Prezzi</h1>
+    <p data-i18n="page.sub">Piatti della tradizione italiana, pizze cotte al momento e qualche specialità che facciamo da sempre.</p>
+</section>
+
+<!-- Menu completo -->
+<section class="menu-full">
+    <div class="container">
+        <a href="index.html" class="menu-back" data-i18n="menu.back">← Torna alla home</a>
+
+        <!-- Pizza Famiglia -->
+        <div class="menu-category">
+            <h2 data-i18n="menu.cat.family">🍕 Offerta Pizza Famiglia</h2>
+            <span class="cat-note" data-i18n="menu.cat.family_note">per 4 persone, ideale da condividere</span>
+            <ul class="menu-list">
+                <li><span class="dish">Margherita</span><span class="dots"></span><span class="price">21,00 €</span></li>
+                <li><span class="dish">Prosciutto</span><span class="dots"></span><span class="price">24,00 €</span></li>
+                <li><span class="dish">Salame</span><span class="dots"></span><span class="price">24,00 €</span></li>
+                <li><span class="dish">Napoli</span><span class="dots"></span><span class="price">27,00 €</span></li>
+                <li><span class="dish">4 Stagioni</span><span class="dots"></span><span class="price">27,00 €</span></li>
+                <li><span class="dish">Capricciosa</span><span class="dots"></span><span class="price">27,00 €</span></li>
+                <li><span class="dish">4 Formaggi</span><span class="dots"></span><span class="price">27,00 €</span></li>
+                <li><span class="dish">People</span><span class="dots"></span><span class="price">27,00 €</span></li>
+                <li><span class="dish">Vegana</span><span class="dots"></span><span class="price">27,00 €</span></li>
+            </ul>
+        </div>
+
+        <!-- Primi piatti -->
+        <div class="menu-category">
+            <h2 data-i18n="menu.cat.primi">🍝 Primi piatti</h2>
+            <span class="cat-note" data-i18n="menu.cat.primi_note">pasta fresca e risotti della casa</span>
+            <ul class="menu-list">
+                <li><span class="dish" data-i18n="dish.spaghettimore">Spaghetti al mare</span><span class="dots"></span><span class="price">15,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.spaghettiaglio">Spaghetti aglio, olio e peperoncino</span><span class="dots"></span><span class="price">9,50 €</span></li>
+                <li><span class="dish" data-i18n="dish.spaghetticarbo">Spaghetti alla carbonara</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.spaghettipizz">Spaghetti alla pizzaiola</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.spaghettiinero">Spaghetti al nero di seppia</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.fusibili">Fusilli biancorosa</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.tagliatelle">Tagliatelle alla matriciana</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.penne">Penne all'arrabbiata</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.gnocchiformaggi">Gnocchi ai 4 formaggi</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.gnocchiverdi">Gnocchi verdi</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.gnocchigialli">Gnocchi gialli</span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.risottivari">Risotti vari</span><span class="dots"></span><span class="price">11,00 €</span></li>
+            </ul>
+        </div>
+
+        <!-- Carne -->
+        <div class="menu-category">
+            <h2 data-i18n="menu.cat.carne">🥩 Specialità di carne</h2>
+            <span class="cat-note" data-i18n="menu.cat.carne_note">cotture alla griglia e classici italiani</span>
+            <ul class="menu-list">
+                <li><span class="dish" data-i18n="dish.tagliata">Tagliata di manzo con rucola e grana</span><span class="dots"></span><span class="price">18,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.filetto">Filetto di manzo ai ferri</span><span class="dots"></span><span class="price">18,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.costata">Costata alla griglia</span><span class="dots"></span><span class="price">18,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.scaloppinelimone">Scaloppine al limone</span><span class="dots"></span><span class="price">15,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.scaloppinefunghi">Scaloppine ai funghi</span><span class="dots"></span><span class="price">15,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.cotoletta">Cotoletta alla milanese</span><span class="dots"></span><span class="price">15,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.salsiccia">Salsiccia e patate</span><span class="dots"></span><span class="price">15,00 €</span></li>
+            </ul>
+        </div>
+
+        <!-- Pesce -->
+        <div class="menu-category">
+            <h2 data-i18n="menu.cat.pesce">🐟 Pesce</h2>
+            <span class="cat-note" data-i18n="menu.cat.pesce_note">dal mercato, preparato alla griglia o in padella</span>
+            <ul class="menu-list">
+                <li><span class="dish" data-i18n="dish.frittura">Frittura mista di pesce</span><span class="dots"></span><span class="price">17,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.branzino">Branzino al forno</span><span class="dots"></span><span class="price">17,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.orata">Orata ai ferri</span><span class="dots"></span><span class="price">17,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.calamari">Calamari alla griglia</span><span class="dots"></span><span class="price">17,00 €</span></li>
+            </ul>
+        </div>
+
+        <!-- Affettati -->
+        <div class="menu-category">
+            <h2 data-i18n="menu.cat.affettati">🧀 Affettati e antipasti</h2>
+            <span class="cat-note" data-i18n="menu.cat.affettati_note">salumi, formaggi e specialità locali</span>
+            <ul class="menu-list">
+                <li><span class="dish" data-i18n="dish.tagliereaff">Tagliere di affettati misti</span><span class="dots"></span><span class="price">12,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.tagliereforn">Tagliere di formaggi</span><span class="dots"></span><span class="price">12,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.prosciuttomelone">Prosciutto crudo e melone</span><span class="dots"></span><span class="price">12,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.bresaolarucola">Bresaola, rucola e grana</span><span class="dots"></span><span class="price">12,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.caprese">Caprese con mozzarella di bufala</span><span class="dots"></span><span class="price">10,00 €</span></li>
+            </ul>
+        </div>
+
+        <!-- Contorni -->
+        <div class="menu-category">
+            <h2 data-i18n="menu.cat.contorni">🥗 Contorni</h2>
+            <ul class="menu-list">
+                <li><span class="dish" data-i18n="dish.insalatamista">Insalata mista</span><span class="dots"></span><span class="price">5,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.patatefritte">Patate fritte</span><span class="dots"></span><span class="price">5,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.verduregliate">Verdure grigliate</span><span class="dots"></span><span class="price">6,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.spinaci">Spinaci al burro</span><span class="dots"></span><span class="price">5,00 €</span></li>
+            </ul>
+        </div>
+
+        <!-- Focacce -->
+        <div class="menu-category">
+            <h2 data-i18n="menu.cat.focacce">🥖 Focacce & piatti veloci</h2>
+            <span class="cat-note" data-i18n="menu.cat.focacce_note">perfetti per una pausa pranzo</span>
+            <ul class="menu-list">
+                <li><span class="dish" data-i18n="dish.focacciasemplice">Focaccia semplice con olio e sale</span><span class="dots"></span><span class="price">5,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.focacciafarcita">Focaccia farcita prosciutto e mozzarella</span><span class="dots"></span><span class="price">8,00 €</span></li>
+                <li><span class="dish" data-i18n="dish.piadina">Piadina classica</span><span class="dots"></span><span class="price">7,50 €</span></li>
+                <li><span class="dish" data-i18n="dish.bruschette">Bruschette miste</span><span class="dots"></span><span class="price">6,50 €</span></li>
+            </ul>
+        </div>
+
+        <!-- Pizze -->
+        <div class="menu-category">
+            <h2 data-i18n="menu.cat.pizze">🍕 Le nostre pizze</h2>
+            <span class="cat-note" data-i18n="menu.cat.pizze_note">impasto lavorato ogni giorno, cotte al momento</span>
+            <p class="pizza-base" data-i18n="menu.pizzabase">Base di ogni pizza: pomodoro e mozzarella. Coperto 2,00 € · Consegna a domicilio: +1,50 € per articolo · Doppia pasta: +1,50 €</p>
+            <ul class="menu-list">
+                <li><span class="dish">Margherita</span><span class="dots"></span><span class="price">8,00 €</span></li>
+                <li><span class="dish">Marinara<span class="desc" data-i18n="pizza.desc.marinara"> – pomodoro, capperi, aglio</span></span><span class="dots"></span><span class="price">6,50 €</span></li>
+                <li><span class="dish">Pane</span><span class="dots"></span><span class="price">5,50 €</span></li>
+                <li><span class="dish">Baby Margherita <em>(trancio)</em></span><span class="dots"></span><span class="price">4,00 €</span></li>
+                <li><span class="dish">Generoso<span class="desc" data-i18n="pizza.desc.generoso"> – salame</span></span><span class="dots"></span><span class="price">10,00 €</span></li>
+                <li><span class="dish">Funghi</span><span class="dots"></span><span class="price">10,00 €</span></li>
+                <li><span class="dish">Prosciutto</span><span class="dots"></span><span class="price">10,00 €</span></li>
+                <li><span class="dish">Napoli<span class="desc" data-i18n="pizza.desc.napoli"> – acciughe, olive</span></span><span class="dots"></span><span class="price">10,50 €</span></li>
+                <li><span class="dish">Regina<span class="desc" data-i18n="pizza.desc.regina"> – funghi, prosciutto</span></span><span class="dots"></span><span class="price">10,50 €</span></li>
+                <li><span class="dish">Bregagno<span class="desc" data-i18n="pizza.desc.bregagno"> – prosciutto, uovo, taleggio, gorgonzola</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Pizzaiola<span class="desc" data-i18n="pizza.desc.pizzaiola"> – origano, mozzarella fresca, olive, capperi</span></span><span class="dots"></span><span class="price">10,00 €</span></li>
+                <li><span class="dish">4 Stagioni<span class="desc" data-i18n="pizza.desc.stagioni4"> – prosciutto, funghi, carciofi, peperoni</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Capricciosa<span class="desc" data-i18n="pizza.desc.capricciosa"> – salame, carciofi, peperoni, olive, cipolle</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Pescatore<span class="desc" data-i18n="pizza.desc.pescatore"> – frutti di mare, aglio, capperi</span></span><span class="dots"></span><span class="price">12,00 €</span></li>
+                <li><span class="dish">Duna<span class="desc" data-i18n="pizza.desc.duna"> – salame, cipolla, funghi, piccante</span></span><span class="dots"></span><span class="price">10,50 €</span></li>
+                <li><span class="dish">Stafan<span class="desc" data-i18n="pizza.desc.stafan"> – pomodoro, mozzarella, funghi, spinaci</span></span><span class="dots"></span><span class="price">10,50 €</span></li>
+                <li><span class="dish">Tonno<span class="desc" data-i18n="pizza.desc.tonno"> – tonno, cipolle</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Parmense<span class="desc" data-i18n="pizza.desc.parmense"> – cotto, melanzane, parmigiano</span></span><span class="dots"></span><span class="price">10,50 €</span></li>
+                <li><span class="dish">Cima<span class="desc" data-i18n="pizza.desc.cima"> – tonno, gamberetti, mozzarella fresca, insalata verde, salsa rosa</span></span><span class="dots"></span><span class="price">15,00 €</span></li>
+                <li><span class="dish">Paperina<span class="desc" data-i18n="pizza.desc.paperina"> – rucola</span></span><span class="dots"></span><span class="price">9,50 €</span></li>
+                <li><span class="dish">Lucky in your hands<span class="desc" data-i18n="pizza.desc.lucky"> – gorgonzola e noci</span></span><span class="dots"></span><span class="price">10,50 €</span></li>
+                <li><span class="dish">Messicana<span class="desc" data-i18n="pizza.desc.messicana"> – salame piccante</span></span><span class="dots"></span><span class="price">10,00 €</span></li>
+                <li><span class="dish">4 Formaggi<span class="desc" data-i18n="pizza.desc.formaggi4"> – grana, taleggio, gorgonzola, mozzarella</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Vegana<span class="desc" data-i18n="pizza.desc.vegana"> – verdure miste al forno</span></span><span class="dots"></span><span class="price">10,50 €</span></li>
+                <li><span class="dish">Gianna<span class="desc" data-i18n="pizza.desc.gianna"> – gamberetti e rucola</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Piatto Italiano<span class="desc" data-i18n="pizza.desc.piattoit"> – cotoletta al forno, cotta su pane, insalata mista</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Azzurra<span class="desc" data-i18n="pizza.desc.azzurra"> – mozzarella fresca, pomodoro fresco, parmigiano, salsa verde</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Crudo Parma<span class="desc" data-i18n="pizza.desc.crudoparma"> – prosciutto crudo di Parma</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Tedesca<span class="desc" data-i18n="pizza.desc.tedesca"> – würstel</span></span><span class="dots"></span><span class="price">8,50 €</span></li>
+                <li><span class="dish">Giacomo<span class="desc" data-i18n="pizza.desc.giacomo"> – prosciutto crudo, gorgonzola</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Pugliese<span class="desc" data-i18n="pizza.desc.pugliese"> – pomodoro, mozzarella, cipolle</span></span><span class="dots"></span><span class="price">9,00 €</span></li>
+                <li><span class="dish">Daniele<span class="desc" data-i18n="pizza.desc.daniele"> – pomodoro, mozzarella, taleggio, prosciutto cotto</span></span><span class="dots"></span><span class="price">10,50 €</span></li>
+                <li><span class="dish">Maxi<span class="desc" data-i18n="pizza.desc.maxi"> – speck, gorgonzola</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">People<span class="desc" data-i18n="pizza.desc.people"> – taleggio, zucchine, prosciutto cotto</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Carletto<span class="desc" data-i18n="pizza.desc.carletto"> – patatine fritte</span></span><span class="dots"></span><span class="price">9,50 €</span></li>
+                <li><span class="dish">Calzone Farcito<span class="desc" data-i18n="pizza.desc.calzone"> – funghi, cotto, carciofi, peperoni</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Bresaolona<span class="desc" data-i18n="pizza.desc.bresaolona"> – mozzarella fresca, rucola, pomodoro fresco, bresaola</span></span><span class="dots"></span><span class="price">12,00 €</span></li>
+                <li><span class="dish">Salsiccia Piccante e Peperoni</span><span class="dots"></span><span class="price">10,50 €</span></li>
+                <li><span class="dish">Ceresio<span class="desc" data-i18n="pizza.desc.ceresio"> – mozzarella fresca, melanzane, parmigiano, crudo, pomodoro fresco, rucola</span></span><span class="dots"></span><span class="price">14,00 €</span></li>
+                <li><span class="dish">Mami<span class="desc" data-i18n="pizza.desc.mami"> – patate al forno, speck, taleggio</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Paesana<span class="desc" data-i18n="pizza.desc.paesana"> – crudo, mozzarella, parmigiano</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Valtellina<span class="desc" data-i18n="pizza.desc.valtellina"> – bresaola, funghi, rucola, grana</span></span><span class="dots"></span><span class="price">12,00 €</span></li>
+                <li><span class="dish">Gio<span class="desc" data-i18n="pizza.desc.gio"> – funghi, gamberetti</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Lina<span class="desc" data-i18n="pizza.desc.lina"> – mozzarella fresca, prosciutto cotto, rucola</span></span><span class="dots"></span><span class="price">10,00 €</span></li>
+                <li><span class="dish">Orientale<span class="desc" data-i18n="pizza.desc.orientale"> – gamberetti, prosciutto cotto, curry</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li><span class="dish">Fattore<span class="desc" data-i18n="pizza.desc.fattore"> – prosciutto cotto, parmigiano</span></span><span class="dots"></span><span class="price">10,50 €</span></li>
+                <li><span class="dish">Del Mozzo<span class="desc" data-i18n="pizza.desc.delmozzo"> – salame piccante, gorgonzola</span></span><span class="dots"></span><span class="price">10,50 €</span></li>
+                <li><span class="dish">Cico<span class="desc" data-i18n="pizza.desc.cico"> – cotoletta, pomodoro, mozzarella, taleggio</span></span><span class="dots"></span><span class="price">11,50 €</span></li>
+                <li><span class="dish">Manu<span class="desc" data-i18n="pizza.desc.manu"> – mozzarella, gorgonzola, grana, funghi</span></span><span class="dots"></span><span class="price">10,50 €</span></li>
+                <li><span class="dish">Latina<span class="desc" data-i18n="pizza.desc.latina"> – uova, parmigiano, verdure miste</span></span><span class="dots"></span><span class="price">11,00 €</span></li>
+                <li class="menu-list-highlight"><span class="dish">Porlezza <span class="pizza-badge">specialità della casa</span><span class="desc" data-i18n="pizza.desc.porlezza"> – pomodoro e mozzarella freschi, crudo di Parma, rucola</span></span><span class="dots"></span><span class="price">15,00 €</span></li>
+            </ul>
+        </div>
+
+        <div class="menu-cta">
+            <a href="tel:+39034472393" class="btn btn-primary" data-i18n="menu.cta.call">📞 Chiama per ordinare</a>
+            <a href="index.html#contatti" class="btn btn-ghost" data-i18n="menu.cta.map">Come raggiungerci</a>
+        </div>
+    </div>
+</section>
+
+<!-- Sticky call -->
+<a href="tel:+39034472393" class="sticky-call" aria-label="Chiama Pronto Pizza">
+    <span>📞</span>
+</a>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h4>Pronto Pizza</h4>
+            <p data-i18n-html="footer.addr">Ristorante · Pizzeria · Bar<br>da Fabio — Via Garibaldi 31, Porlezza (CO)</p>
+        </div>
+        <div class="footer-col">
+            <h4 data-i18n="footer.contact">Contatti</h4>
+            <p><a href="tel:+39034472393">+39 0344 72393</a></p>
+        </div>
+        <div class="footer-col">
+            <h4 data-i18n="footer.social">Social</h4>
+            <p>
+                <a href="https://www.facebook.com/ristoranteprontopizza/?locale=it_IT" target="_blank" rel="noopener">Facebook</a><br>
+                <a href="https://it.tripadvisor.ch/Restaurant_Review-g1077989-d3739338-Reviews-Ristorante_Pronto_Pizza_Da_Fabio-Porlezza_Province_of_Como_Lombardy.html" target="_blank" rel="noopener">Tripadvisor</a>
+            </p>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© <span id="year">2026</span> Pronto Pizza — Via Garibaldi 31, Porlezza (CO). <span data-i18n="footer.rights">Tutti i diritti riservati.</span></p>
+    </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Chiudi">×</button>
+    <img src="" alt="" id="lightbox-img">
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/i18n.js"></script>
+</body>
+</html>
