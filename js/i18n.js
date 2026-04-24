@@ -34,7 +34,7 @@
             'about.badge':   'Dal 1988 · Fabio & famiglia',
 
             /* Specialità */
-            'feat.1.title': 'Forno a legna',
+            'feat.1.title': 'Forno elettrico',
             'feat.1.text':  'Pizze cotte al momento, impasto maturato a lungo.',
             'feat.2.title': 'Pasta fresca',
             'feat.2.text':  'Primi piatti della tradizione italiana, ogni giorno.',
@@ -217,7 +217,7 @@
             'about.quote':   '"Good pizza, good wine,<br>the evening is saved."',
             'about.badge':   'Since 1988 · Fabio & family',
 
-            'feat.1.title': 'Wood-fired oven',
+            'feat.1.title': 'Electric oven',
             'feat.1.text':  'Freshly baked pizzas, long-matured dough.',
             'feat.2.title': 'Fresh pasta',
             'feat.2.text':  'Traditional Italian first courses, every day.',
@@ -392,7 +392,7 @@
             'about.quote':   '"Gute Pizza, guter Wein,<br>der Abend ist gerettet."',
             'about.badge':   'Seit 1988 · Fabio & Familie',
 
-            'feat.1.title': 'Holzofen',
+            'feat.1.title': 'Elektroofen',
             'feat.1.text':  'Frisch gebackene Pizzen, lang gereifter Teig.',
             'feat.2.title': 'Frische Pasta',
             'feat.2.text':  'Traditionelle italienische Ersten Gänge, jeden Tag.',
@@ -567,7 +567,7 @@
             'about.quote':   '"Bonne pizza, bon vin,<br>la soirée est sauvée."',
             'about.badge':   'Depuis 1988 · Fabio & famille',
 
-            'feat.1.title': 'Four à bois',
+            'feat.1.title': 'Four électrique',
             'feat.1.text':  'Pizzas cuites au moment, pâte longuement maturée.',
             'feat.2.title': 'Pâtes fraîches',
             'feat.2.text':  'Premiers plats de la tradition italienne, chaque jour.',
