@@ -149,11 +149,17 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow-sm);
+}
+.site-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
     background: rgba(251, 247, 236, 0.96);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--line);
-    box-shadow: var(--shadow-sm);
+    z-index: -1;
 }
 .header-inner {
     display: flex;
