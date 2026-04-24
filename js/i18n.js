@@ -61,6 +61,19 @@
             'gallery.title':   'Dentro il locale',
             'gallery.sub':     'Tavoli ravvicinati, lavagne scritte a mano, cucina a vista. Entra e respira l\'aria di casa.',
 
+            /* Recensioni */
+            'nav.reviews':          'Recensioni',
+            'reviews.title':        'Quello che i clienti dicono di noi',
+            'reviews.sub':          'Leggi le recensioni di chi ci ha già visitato.',
+            'reviews.rating_label': 'Media su Tripadvisor · 182 recensioni',
+            'reviews.cta':          'Leggi tutte le recensioni su Tripadvisor',
+            'review.1.text':        '"We recently tried some pizza in the area and it was one of the best we\'ve had. The service was excellent, prices were reasonable, and the food was delicious."',
+            'review.1.origin':      'Londra, Regno Unito · giugno 2024',
+            'review.2.text':        '"Pizza eccellente specialmente la Ceresio. Fabio e moglie molto gentili. Buoni anche le altre vivande. Consiglio la bottiglia di Prosecco servito freddo. Dopopranzo Fabio suona il piano e canta. Prezzi molto contenuti."',
+            'review.2.origin':      'novembre 2022',
+            'review.3.text':        '"In questo locale artistico, con strumenti appesi, pianoforte e quadri, si respira un\'aria familiare. Focacce squisite, croccanti e ingredienti freschi. Ottima cottura. Esperienza assolutamente da rifare."',
+            'review.3.origin':      'ottobre 2022',
+
             /* Contatti */
             'contact.eyebrow': 'Contatti & orari',
             'contact.title':   'Vieni a trovarci',
@@ -241,6 +254,19 @@
             'gallery.title':   'Inside the restaurant',
             'gallery.sub':     'Close-set tables, hand-written chalkboards, open kitchen. Come in and breathe the home atmosphere.',
 
+            /* Reviews */
+            'nav.reviews':          'Reviews',
+            'reviews.title':        'What our customers say about us',
+            'reviews.sub':          'Read reviews from people who have already visited us.',
+            'reviews.rating_label': 'Average on Tripadvisor · 182 reviews',
+            'reviews.cta':          'Read all reviews on Tripadvisor',
+            'review.1.text':        '"We recently tried some pizza in the area and it was one of the best we\'ve had. The service was excellent, prices were reasonable, and the food was delicious."',
+            'review.1.origin':      'London, UK · June 2024',
+            'review.2.text':        '"Excellent pizza, especially the Ceresio. Fabio and his wife very kind. Good food overall. I recommend the bottle of Prosecco served cold. After lunch Fabio plays the piano and sings. Very reasonable prices."',
+            'review.2.origin':      'November 2022',
+            'review.3.text':        '"In this artistic venue, with instruments hanging, a piano and paintings, you breathe a familiar atmosphere. Exquisite focaccia, crispy with fresh ingredients. Excellent cooking. An experience definitely worth repeating."',
+            'review.3.origin':      'October 2022',
+
             'contact.eyebrow': 'Contacts & hours',
             'contact.title':   'Come and visit us',
             'contact.lead':    'In the historic centre of Porlezza, a stone\'s throw from the lake. To book or order takeaway pizza, just give us a call.',
@@ -416,6 +442,19 @@
             'gallery.title':   'Im Lokal',
             'gallery.sub':     'Eng gestellte Tische, handgeschriebene Tafeln, offene Küche. Kommen Sie rein und genießen Sie die familiäre Atmosphäre.',
 
+            /* Bewertungen */
+            'nav.reviews':          'Bewertungen',
+            'reviews.title':        'Was unsere Kunden über uns sagen',
+            'reviews.sub':          'Lesen Sie Bewertungen von Gästen, die uns bereits besucht haben.',
+            'reviews.rating_label': 'Durchschnitt auf Tripadvisor · 182 Bewertungen',
+            'reviews.cta':          'Alle Bewertungen auf Tripadvisor lesen',
+            'review.1.text':        '"We recently tried some pizza in the area and it was one of the best we\'ve had. The service was excellent, prices were reasonable, and the food was delicious."',
+            'review.1.origin':      'London, Vereinigtes Königreich · Juni 2024',
+            'review.2.text':        '"Ausgezeichnete Pizza, besonders die Ceresio. Fabio und seine Frau sehr freundlich. Auch die anderen Speisen gut. Ich empfehle die Flasche kalt servierten Prosecco. Nach dem Mittagessen spielt Fabio Klavier und singt. Sehr günstige Preise."',
+            'review.2.origin':      'November 2022',
+            'review.3.text':        '"In diesem künstlerischen Lokal mit aufgehängten Instrumenten, Klavier und Gemälden atmet man eine vertraute Atmosphäre. Köstliche Focaccia, knusprig mit frischen Zutaten. Ausgezeichnete Zubereitung. Ein Erlebnis, das man unbedingt wiederholen sollte."',
+            'review.3.origin':      'Oktober 2022',
+
             'contact.eyebrow': 'Kontakt & Öffnungszeiten',
             'contact.title':   'Besuchen Sie uns',
             'contact.lead':    'Im historischen Zentrum von Porlezza, einen Steinwurf vom See. Für Reservierungen oder Take-away einfach anrufen.',
@@ -590,6 +629,19 @@
             'gallery.eyebrow': 'Galerie',
             'gallery.title':   'À l\'intérieur',
             'gallery.sub':     'Tables serrées, ardoises écrites à la main, cuisine ouverte. Entrez et respirez l\'air de la maison.',
+
+            /* Avis */
+            'nav.reviews':          'Avis',
+            'reviews.title':        'Ce que nos clients disent de nous',
+            'reviews.sub':          'Lisez les avis de ceux qui nous ont déjà rendu visite.',
+            'reviews.rating_label': 'Moyenne sur Tripadvisor · 182 avis',
+            'reviews.cta':          'Lire tous les avis sur Tripadvisor',
+            'review.1.text':        '"We recently tried some pizza in the area and it was one of the best we\'ve had. The service was excellent, prices were reasonable, and the food was delicious."',
+            'review.1.origin':      'Londres, Royaume-Uni · juin 2024',
+            'review.2.text':        '"Pizza excellente, surtout la Ceresio. Fabio et sa femme très gentils. Les autres plats également bons. Je recommande la bouteille de Prosecco servi frais. Après le déjeuner, Fabio joue du piano et chante. Prix très abordables."',
+            'review.2.origin':      'novembre 2022',
+            'review.3.text':        '"Dans ce lieu artistique, avec des instruments accrochés, un piano et des tableaux, on respire une atmosphère familiale. Focaccia exquise, croustillante avec des ingrédients frais. Excellente cuisson. Une expérience absolument à renouveler."',
+            'review.3.origin':      'octobre 2022',
 
             'contact.eyebrow': 'Contacts & horaires',
             'contact.title':   'Venez nous rendre visite',
