@@ -93,9 +93,15 @@
             'footer.contact': 'Contatti',
             'footer.social':  'Social',
             'footer.rights':  'Tutti i diritti riservati.',
+            'footer.developed': 'Sito sviluppato da <a href="https://tommyzaffa.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Thomas Zaffalon</a>',
 
             /* Stato apertura */
-            'status.open_today': 'Aperto oggi 12:00–14:00 · 18:00–22:00',
+            'status.open_today':  'Aperto oggi 12:00–14:00 · 18:00–22:00',
+            'status.closed_pre':  'Attualmente chiuso · Riapre',
+            'status.at_12':       'alle 12:00',
+            'status.at_18':       'alle 18:00',
+            'status.today':       'oggi',
+            'status.tomorrow':    'domani',
 
             /* Pagina listino */
             'page.eyebrow': 'Il nostro listino',
@@ -135,6 +141,34 @@
             'dish.gnocchiverdi':      'Gnocchi verdi',
             'dish.gnocchigialli':     'Gnocchi gialli',
             'dish.risottivari':       'Risotti vari',
+            'dish.risottocarbonara':  'Risotto alla Carbonara',
+            'dish.tortellini':        'Tortellini fatti in casa',
+            'dish.risottofdm':        'Risotto ai frutti di mare',
+            'dish.salsicciapeperoni': 'Salsiccia piccante e peperoni',
+            'dish.slice':             '(trancio)',
+            'pizza.badge.specialty':  'specialità della casa',
+
+            /* Descrizioni primi (pasta/risotti) */
+            'pasta.desc.pugliese':     ' – peperoni, cipolla rossa, olio d\'oliva, pepe nero',
+            'pasta.desc.foreveryoung': ' – zucchine, carote, melanzane, limone',
+            'pasta.desc.gallos':       ' – cipolla, pomodoro, uovo',
+            'pasta.desc.garganella':   ' – pancetta, pomodoro, funghi',
+            'pasta.desc.forteventura': ' – olio d\'oliva, acciughe, zenzero, pomodoro fresco',
+            'pasta.desc.mauro':        ' – gorgonzola, crudo di Parma, pomodoro fresco',
+            'pasta.desc.romeo':        ' – funghi, zucchine, pomodoro fresco, panna',
+            'pasta.desc.king':         ' – gamberetti, zucchine, pomodoro fresco, panna',
+            'pasta.desc.pastore':      ' – aglio, olio, peperoncino, pancetta, pecorino',
+            'pasta.desc.andreas':      ' – zafferano, porcini, gamberetti',
+            'pasta.desc.sud':          ' – aglio, olio e peperoncino',
+            'pasta.desc.chiavenna':    ' – bresaola, taleggio',
+            'pasta.desc.marcopolo':    ' – salmone affumicato, mela, aglio, peperoncino',
+            'pasta.desc.governo':      ' – pere e taleggio',
+            'pasta.desc.rosso':        ' – pomodoro e cipolla',
+            'pasta.desc.referend':     ' – gorgonzola, miele, peperoncino, pere',
+            'pasta.desc.alnord':       ' – ai quattro formaggi',
+            'pasta.desc.pizzoccheri':  ' – 20 minuti di attesa',
+            'pizza.desc.izidoro':      ' – cipolla, pancetta, piccante',
+            'pizza.desc.bianca_sat':   ' – cotto, pomodoro, lattuga, maionese',
             'dish.tagliata':          'Tagliata di manzo con rucola e grana',
             'dish.filetto':           'Filetto di manzo ai ferri',
             'dish.costata':           'Costata alla griglia',
@@ -283,8 +317,14 @@
             'footer.contact': 'Contact',
             'footer.social':  'Social',
             'footer.rights':  'All rights reserved.',
+            'footer.developed': 'Website developed by <a href="https://tommyzaffa.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Thomas Zaffalon</a>',
 
-            'status.open_today': 'Open today 12:00–14:00 · 18:00–22:00',
+            'status.open_today':  'Open today 12:00–14:00 · 18:00–22:00',
+            'status.closed_pre':  'Currently closed · Reopens',
+            'status.at_12':       'at 12:00',
+            'status.at_18':       'at 18:00',
+            'status.today':       'today',
+            'status.tomorrow':    'tomorrow',
 
             'page.eyebrow': 'Our price list',
             'page.title':   'Menu & Prices',
@@ -323,6 +363,34 @@
             'dish.gnocchiverdi':      'Green gnocchi',
             'dish.gnocchigialli':     'Yellow gnocchi',
             'dish.risottivari':       'Various risottos',
+            'dish.risottocarbonara':  'Carbonara-style risotto',
+            'dish.tortellini':        'Homemade tortellini',
+            'dish.risottofdm':        'Seafood risotto',
+            'dish.salsicciapeperoni': 'Spicy sausage and peppers',
+            'dish.slice':             '(slice)',
+            'pizza.badge.specialty':  'house specialty',
+
+            /* First-course descriptions (pasta/risotto) */
+            'pasta.desc.pugliese':     ' – peppers, red onion, olive oil, black pepper',
+            'pasta.desc.foreveryoung': ' – courgettes, carrots, aubergine, lemon',
+            'pasta.desc.gallos':       ' – onion, tomato, egg',
+            'pasta.desc.garganella':   ' – bacon, tomato, mushrooms',
+            'pasta.desc.forteventura': ' – olive oil, anchovies, ginger, fresh tomato',
+            'pasta.desc.mauro':        ' – gorgonzola, Parma cured ham, fresh tomato',
+            'pasta.desc.romeo':        ' – mushrooms, courgettes, fresh tomato, cream',
+            'pasta.desc.king':         ' – prawns, courgettes, fresh tomato, cream',
+            'pasta.desc.pastore':      ' – garlic, olive oil, chilli, bacon, pecorino',
+            'pasta.desc.andreas':      ' – saffron, porcini mushrooms, prawns',
+            'pasta.desc.sud':          ' – garlic, oil and chilli',
+            'pasta.desc.chiavenna':    ' – bresaola, taleggio',
+            'pasta.desc.marcopolo':    ' – smoked salmon, apple, garlic, chilli',
+            'pasta.desc.governo':      ' – pears and taleggio',
+            'pasta.desc.rosso':        ' – tomato and onion',
+            'pasta.desc.referend':     ' – gorgonzola, honey, chilli, pears',
+            'pasta.desc.alnord':       ' – four-cheese style',
+            'pasta.desc.pizzoccheri':  ' – 20-minute wait',
+            'pizza.desc.izidoro':      ' – onion, bacon, spicy',
+            'pizza.desc.bianca_sat':   ' – cooked ham, tomato, lettuce, mayonnaise',
             'dish.tagliata':          'Sliced beef with rocket and grana',
             'dish.filetto':           'Grilled beef fillet',
             'dish.costata':           'Grilled rib steak',
@@ -471,8 +539,14 @@
             'footer.contact': 'Kontakt',
             'footer.social':  'Social',
             'footer.rights':  'Alle Rechte vorbehalten.',
+            'footer.developed': 'Webseite entwickelt von <a href="https://tommyzaffa.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Thomas Zaffalon</a>',
 
-            'status.open_today': 'Heute geöffnet 12:00–14:00 · 18:00–22:00',
+            'status.open_today':  'Heute geöffnet 12:00–14:00 · 18:00–22:00',
+            'status.closed_pre':  'Derzeit geschlossen · Öffnet wieder',
+            'status.at_12':       'um 12:00',
+            'status.at_18':       'um 18:00',
+            'status.today':       'heute',
+            'status.tomorrow':    'morgen',
 
             'page.eyebrow': 'Unsere Speisekarte',
             'page.title':   'Speisekarte & Preise',
@@ -511,6 +585,34 @@
             'dish.gnocchiverdi':      'Grüne Gnocchi',
             'dish.gnocchigialli':     'Gelbe Gnocchi',
             'dish.risottivari':       'Verschiedene Risottos',
+            'dish.risottocarbonara':  'Risotto alla Carbonara',
+            'dish.tortellini':        'Hausgemachte Tortellini',
+            'dish.risottofdm':        'Risotto mit Meeresfrüchten',
+            'dish.salsicciapeperoni': 'Scharfe Wurst und Paprika',
+            'dish.slice':             '(Stück)',
+            'pizza.badge.specialty':  'Spezialität des Hauses',
+
+            /* Beschreibungen Erste Gänge (Pasta/Risotto) */
+            'pasta.desc.pugliese':     ' – Paprika, rote Zwiebel, Olivenöl, schwarzer Pfeffer',
+            'pasta.desc.foreveryoung': ' – Zucchini, Karotten, Auberginen, Zitrone',
+            'pasta.desc.gallos':       ' – Zwiebel, Tomate, Ei',
+            'pasta.desc.garganella':   ' – Pancetta, Tomate, Pilze',
+            'pasta.desc.forteventura': ' – Olivenöl, Sardellen, Ingwer, frische Tomate',
+            'pasta.desc.mauro':        ' – Gorgonzola, Parmaschinken, frische Tomate',
+            'pasta.desc.romeo':        ' – Pilze, Zucchini, frische Tomate, Sahne',
+            'pasta.desc.king':         ' – Garnelen, Zucchini, frische Tomate, Sahne',
+            'pasta.desc.pastore':      ' – Knoblauch, Öl, Peperoncino, Pancetta, Pecorino',
+            'pasta.desc.andreas':      ' – Safran, Steinpilze, Garnelen',
+            'pasta.desc.sud':          ' – Knoblauch, Öl und Peperoncino',
+            'pasta.desc.chiavenna':    ' – Bresaola, Taleggio',
+            'pasta.desc.marcopolo':    ' – geräucherter Lachs, Apfel, Knoblauch, Peperoncino',
+            'pasta.desc.governo':      ' – Birnen und Taleggio',
+            'pasta.desc.rosso':        ' – Tomate und Zwiebel',
+            'pasta.desc.referend':     ' – Gorgonzola, Honig, Peperoncino, Birnen',
+            'pasta.desc.alnord':       ' – mit vier Käsesorten',
+            'pasta.desc.pizzoccheri':  ' – 20 Minuten Wartezeit',
+            'pizza.desc.izidoro':      ' – Zwiebel, Pancetta, scharf',
+            'pizza.desc.bianca_sat':   ' – Kochschinken, Tomate, Salat, Mayonnaise',
             'dish.tagliata':          'Rindfleisch-Tagliata mit Rucola und Grana',
             'dish.filetto':           'Gegrilltes Rinderfilet',
             'dish.costata':           'Gegrilltes Rippensteak',
@@ -659,8 +761,14 @@
             'footer.contact': 'Contact',
             'footer.social':  'Social',
             'footer.rights':  'Tous droits réservés.',
+            'footer.developed': 'Site développé par <a href="https://tommyzaffa.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Thomas Zaffalon</a>',
 
-            'status.open_today': 'Ouvert aujourd\'hui 12h–14h · 18h–22h',
+            'status.open_today':  'Ouvert aujourd\'hui 12h–14h · 18h–22h',
+            'status.closed_pre':  'Actuellement fermé · Réouvre',
+            'status.at_12':       'à 12h',
+            'status.at_18':       'à 18h',
+            'status.today':       'aujourd\'hui',
+            'status.tomorrow':    'demain',
 
             'page.eyebrow': 'Notre carte',
             'page.title':   'Menu & Prix',
@@ -699,6 +807,34 @@
             'dish.gnocchiverdi':      'Gnocchi verts',
             'dish.gnocchigialli':     'Gnocchi jaunes',
             'dish.risottivari':       'Risottos variés',
+            'dish.risottocarbonara':  'Risotto à la carbonara',
+            'dish.tortellini':        'Tortellini faits maison',
+            'dish.risottofdm':        'Risotto aux fruits de mer',
+            'dish.salsicciapeperoni': 'Saucisse épicée et poivrons',
+            'dish.slice':             '(part)',
+            'pizza.badge.specialty':  'spécialité de la maison',
+
+            /* Descriptions des entrées (pâtes/risottos) */
+            'pasta.desc.pugliese':     ' – poivrons, oignon rouge, huile d\'olive, poivre noir',
+            'pasta.desc.foreveryoung': ' – courgettes, carottes, aubergines, citron',
+            'pasta.desc.gallos':       ' – oignon, tomate, œuf',
+            'pasta.desc.garganella':   ' – pancetta, tomate, champignons',
+            'pasta.desc.forteventura': ' – huile d\'olive, anchois, gingembre, tomate fraîche',
+            'pasta.desc.mauro':        ' – gorgonzola, jambon cru de Parme, tomate fraîche',
+            'pasta.desc.romeo':        ' – champignons, courgettes, tomate fraîche, crème',
+            'pasta.desc.king':         ' – crevettes, courgettes, tomate fraîche, crème',
+            'pasta.desc.pastore':      ' – ail, huile, piment, pancetta, pecorino',
+            'pasta.desc.andreas':      ' – safran, cèpes, crevettes',
+            'pasta.desc.sud':          ' – ail, huile et piment',
+            'pasta.desc.chiavenna':    ' – bresaola, taleggio',
+            'pasta.desc.marcopolo':    ' – saumon fumé, pomme, ail, piment',
+            'pasta.desc.governo':      ' – poires et taleggio',
+            'pasta.desc.rosso':        ' – tomate et oignon',
+            'pasta.desc.referend':     ' – gorgonzola, miel, piment, poires',
+            'pasta.desc.alnord':       ' – aux quatre fromages',
+            'pasta.desc.pizzoccheri':  ' – 20 minutes d\'attente',
+            'pizza.desc.izidoro':      ' – oignon, pancetta, épicé',
+            'pizza.desc.bianca_sat':   ' – jambon cuit, tomate, laitue, mayonnaise',
             'dish.tagliata':          'Tagliata de bœuf, roquette et grana',
             'dish.filetto':           'Filet de bœuf grillé',
             'dish.costata':           'Côte de bœuf grillée',
@@ -813,7 +949,21 @@
                 btn.removeAttribute('data-active');
             }
         });
+
+        /* notifica altri script (es. orari live) */
+        try {
+            document.dispatchEvent(new CustomEvent('pp-lang-change', { detail: { lang: lang } }));
+        } catch (e) {}
     }
+
+    /* helper globale per leggere traduzioni dal lang corrente */
+    window.PPi18n = {
+        t: function (key) {
+            var lang = document.documentElement.lang || 'it';
+            var dict = T[lang] || T.it;
+            return dict[key] !== undefined ? dict[key] : key;
+        }
+    };
 
     function setLang(lang) {
         try { localStorage.setItem('pp-lang', lang); } catch (e) {}

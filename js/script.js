@@ -96,30 +96,46 @@
 
     // ---------- Open status ----------
     const statusEl = document.querySelector('.hero-hours');
-    if (statusEl) {
+    const dayKeys = ['day.sun', 'day.mon', 'day.tue', 'day.wed', 'day.thu', 'day.fri', 'day.sat'];
+
+    function t(key) {
+        return (window.PPi18n && window.PPi18n.t) ? window.PPi18n.t(key) : key;
+    }
+
+    function updateOpenStatus() {
+        if (!statusEl) return;
         const now = new Date();
         const day = now.getDay(); // 0 dom, 1 lun, 2 mar...
         const hour = now.getHours() + now.getMinutes() / 60;
-        const dayNames = ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'];
         const isOpenNow = day !== 1 && ((hour >= 12 && hour < 14) || (hour >= 18 && hour < 22));
 
-        let text = '';
         if (isOpenNow) {
-            // già aperto, mantieni il messaggio default
+            statusEl.innerHTML = '<span class="dot"></span> ' + t('status.open_today');
             return;
-        } else if (day !== 1 && hour >= 14 && hour < 18) {
-            text = 'Attualmente chiuso · Riapre oggi alle 18:00';
+        }
+
+        let whenLabel = '';
+        let atLabel = t('status.at_12');
+
+        if (day !== 1 && hour >= 14 && hour < 18) {
+            whenLabel = t('status.today');
+            atLabel = t('status.at_18');
         } else if (day !== 1 && hour < 12) {
-            text = 'Attualmente chiuso · Riapre oggi alle 12:00';
+            whenLabel = t('status.today');
+            atLabel = t('status.at_12');
         } else {
             // siamo dopo le 22 o è lunedì → trova il prossimo giorno aperto
             let next = (day + 1) % 7;
             while (next === 1) next = (next + 1) % 7;
             const tomorrow = (day + 1) % 7;
-            const label = next === tomorrow ? 'domani' : dayNames[next];
-            text = `Attualmente chiuso · Riapre ${label} alle 12:00`;
+            whenLabel = next === tomorrow ? t('status.tomorrow') : t(dayKeys[next]).toLowerCase();
         }
 
+        const text = t('status.closed_pre') + ' ' + whenLabel + ' ' + atLabel;
         statusEl.innerHTML = '<span class="dot" style="background:#e8b24c;box-shadow:0 0 10px #e8b24c;"></span> ' + text;
     }
+
+    // Render iniziale (se i18n già pronto) e su cambio lingua
+    if (window.PPi18n) updateOpenStatus();
+    document.addEventListener('pp-lang-change', updateOpenStatus);
 })();
