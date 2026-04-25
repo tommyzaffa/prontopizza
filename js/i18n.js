@@ -145,6 +145,7 @@
             'dish.tortellini':        'Tortellini fatti in casa',
             'dish.risottofdm':        'Risotto ai frutti di mare',
             'dish.salsicciapeperoni': 'Salsiccia piccante e peperoni',
+            'dish.tagliatasimple':    'Tagliata di manzo',
             'dish.slice':             '(trancio)',
             'pizza.badge.specialty':  'specialità della casa',
 
@@ -367,6 +368,7 @@
             'dish.tortellini':        'Homemade tortellini',
             'dish.risottofdm':        'Seafood risotto',
             'dish.salsicciapeperoni': 'Spicy sausage and peppers',
+            'dish.tagliatasimple':    'Sliced beef',
             'dish.slice':             '(slice)',
             'pizza.badge.specialty':  'house specialty',
 
@@ -589,6 +591,7 @@
             'dish.tortellini':        'Hausgemachte Tortellini',
             'dish.risottofdm':        'Risotto mit Meeresfrüchten',
             'dish.salsicciapeperoni': 'Scharfe Wurst und Paprika',
+            'dish.tagliatasimple':    'Rindfleisch-Tagliata',
             'dish.slice':             '(Stück)',
             'pizza.badge.specialty':  'Spezialität des Hauses',
 
@@ -811,6 +814,7 @@
             'dish.tortellini':        'Tortellini faits maison',
             'dish.risottofdm':        'Risotto aux fruits de mer',
             'dish.salsicciapeperoni': 'Saucisse épicée et poivrons',
+            'dish.tagliatasimple':    'Tagliata de bœuf',
             'dish.slice':             '(part)',
             'pizza.badge.specialty':  'spécialité de la maison',
 
