@@ -321,7 +321,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
 .hero-bg {
     position: absolute; inset: 0;
     background: url('../img/esterno_1.jpg') center/cover no-repeat;
-    filter: brightness(0.7) saturate(1.1);
+    filter: brightness(0.78) saturate(1.1);
     transform: scale(1.05);
 }
 .hero-overlay {
@@ -830,6 +830,35 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
     transition: background .2s;
 }
 .lightbox-close:hover { background: rgba(255,255,255,0.2); }
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 3rem;
+    line-height: 1;
+    width: 56px; height: 56px;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s;
+    padding: 0 0 6px;
+}
+.lightbox-prev { left: 1rem; }
+.lightbox-next { right: 1rem; }
+.lightbox-prev:hover,
+.lightbox-next:hover { background: rgba(255,255,255,0.25); }
+@media (max-width: 600px) {
+    .lightbox-prev,
+    .lightbox-next { width: 44px; height: 44px; font-size: 2.2rem; }
+    .lightbox-prev { left: 0.4rem; }
+    .lightbox-next { right: 0.4rem; }
+}
 
 /* ---------- Menu page specifics ---------- */
 .page-hero {

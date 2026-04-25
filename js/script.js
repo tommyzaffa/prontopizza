@@ -29,13 +29,23 @@
     const lbImg = document.getElementById('lightbox-img');
     const lbCaption = document.getElementById('lightbox-caption');
     const lbClose = document.querySelector('.lightbox-close');
-    const galleryLinks = document.querySelectorAll('.gallery-item, .js-lightbox');
+    const lbPrev = document.querySelector('.lightbox-prev');
+    const lbNext = document.querySelector('.lightbox-next');
+    const galleryLinks = Array.from(document.querySelectorAll('.gallery-item, .js-lightbox'));
+    let currentIndex = -1;
 
-    function openLightbox(src, caption, alt) {
+    function showAt(index) {
+        if (!lightbox || !galleryLinks.length) return;
+        currentIndex = (index + galleryLinks.length) % galleryLinks.length;
+        const a = galleryLinks[currentIndex];
+        const img = a.querySelector('img');
+        lbImg.src = a.getAttribute('href');
+        lbImg.alt = img ? img.alt : '';
+        lbCaption.textContent = a.dataset.caption || '';
+    }
+    function openLightbox(index) {
         if (!lightbox) return;
-        lbImg.src = src;
-        lbImg.alt = alt || '';
-        lbCaption.textContent = caption || '';
+        showAt(index);
         lightbox.classList.add('open');
         lightbox.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
@@ -45,29 +55,50 @@
         lightbox.classList.remove('open');
         lightbox.setAttribute('aria-hidden', 'true');
         lbImg.src = '';
+        currentIndex = -1;
         document.body.style.overflow = '';
     }
+    function showPrev() { if (currentIndex >= 0) showAt(currentIndex - 1); }
+    function showNext() { if (currentIndex >= 0) showAt(currentIndex + 1); }
 
-    galleryLinks.forEach(a => {
+    galleryLinks.forEach((a, i) => {
         a.addEventListener('click', e => {
             e.preventDefault();
-            const src = a.getAttribute('href');
-            const caption = a.dataset.caption || '';
-            const img = a.querySelector('img');
-            const alt = img ? img.alt : '';
-            openLightbox(src, caption, alt);
+            openLightbox(i);
         });
     });
 
     if (lbClose) lbClose.addEventListener('click', closeLightbox);
+    if (lbPrev)  lbPrev.addEventListener('click', e => { e.stopPropagation(); showPrev(); });
+    if (lbNext)  lbNext.addEventListener('click', e => { e.stopPropagation(); showNext(); });
     if (lightbox) {
         lightbox.addEventListener('click', e => {
             if (e.target === lightbox) closeLightbox();
         });
     }
     document.addEventListener('keydown', e => {
-        if (e.key === 'Escape') closeLightbox();
+        if (!lightbox || !lightbox.classList.contains('open')) {
+            if (e.key === 'Escape') closeLightbox();
+            return;
+        }
+        if (e.key === 'Escape')      closeLightbox();
+        else if (e.key === 'ArrowLeft')  showPrev();
+        else if (e.key === 'ArrowRight') showNext();
     });
+
+    // Swipe touch su mobile
+    if (lightbox) {
+        let touchStartX = 0;
+        lightbox.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        lightbox.addEventListener('touchend', e => {
+            const dx = e.changedTouches[0].screenX - touchStartX;
+            if (Math.abs(dx) > 50) {
+                if (dx < 0) showNext(); else showPrev();
+            }
+        }, { passive: true });
+    }
 
     // ---------- Year footer ----------
     const year = document.getElementById('year');
