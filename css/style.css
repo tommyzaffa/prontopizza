@@ -859,14 +859,21 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
 .lightbox-prev:hover,
 .lightbox-next:hover { background: rgba(0,0,0,0.65); }
 @media (max-width: 600px) {
+    .lightbox { padding-bottom: 5.5rem; }
+    .lightbox img { max-height: 70vh; }
     .lightbox-prev,
     .lightbox-next {
-        width: 44px; height: 44px; font-size: 2.2rem;
-        background: rgba(0,0,0,0.6);
+        top: auto;
+        bottom: 1rem;
+        transform: none;
+        width: 48px; height: 48px;
+        font-size: 2.4rem;
+        background: rgba(255,255,255,0.15);
     }
-    .lightbox-prev { left: 0.5rem; }
-    .lightbox-next { right: 0.5rem; }
-    .lightbox img { max-width: 88vw; }
+    .lightbox-prev { left: calc(50% - 56px); right: auto; }
+    .lightbox-next { left: calc(50% + 8px); right: auto; }
+    .lightbox-prev:hover,
+    .lightbox-next:hover { background: rgba(255,255,255,0.28); }
 }
 
 /* ---------- Menu page specifics ---------- */
