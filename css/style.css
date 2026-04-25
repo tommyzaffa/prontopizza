@@ -859,8 +859,8 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
 .lightbox-prev:hover,
 .lightbox-next:hover { background: rgba(0,0,0,0.65); }
 @media (max-width: 600px) {
-    .lightbox { padding-bottom: 5.5rem; }
-    .lightbox img { max-height: 70vh; }
+    .lightbox { padding-top: 4.5rem; padding-bottom: 5.5rem; }
+    .lightbox img { max-height: 65vh; }
     .lightbox-prev,
     .lightbox-next {
         top: auto;
