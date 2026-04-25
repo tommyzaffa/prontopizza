@@ -324,6 +324,9 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
     filter: brightness(0.78) saturate(1.1);
     transform: scale(1.05);
 }
+@media (max-width: 600px) {
+    .hero-bg { filter: brightness(0.88) saturate(1.1); }
+}
 .hero-overlay {
     position: absolute; inset: 0;
     background:
@@ -839,7 +842,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
     font-size: 3rem;
     line-height: 1;
     width: 56px; height: 56px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.45);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -848,16 +851,22 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
     justify-content: center;
     transition: background .2s;
     padding: 0 0 6px;
+    z-index: 2;
 }
+.lightbox-close { z-index: 2; }
 .lightbox-prev { left: 1rem; }
 .lightbox-next { right: 1rem; }
 .lightbox-prev:hover,
-.lightbox-next:hover { background: rgba(255,255,255,0.25); }
+.lightbox-next:hover { background: rgba(0,0,0,0.65); }
 @media (max-width: 600px) {
     .lightbox-prev,
-    .lightbox-next { width: 44px; height: 44px; font-size: 2.2rem; }
-    .lightbox-prev { left: 0.4rem; }
-    .lightbox-next { right: 0.4rem; }
+    .lightbox-next {
+        width: 44px; height: 44px; font-size: 2.2rem;
+        background: rgba(0,0,0,0.6);
+    }
+    .lightbox-prev { left: 0.5rem; }
+    .lightbox-next { right: 0.5rem; }
+    .lightbox img { max-width: 88vw; }
 }
 
 /* ---------- Menu page specifics ---------- */
