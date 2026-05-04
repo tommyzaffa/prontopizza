@@ -830,6 +830,24 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
     gap: .35rem;
     margin-left: auto;
 }
+.legal-header__inner {
+    flex-wrap: wrap;
+}
+.legal-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .75rem;
+    margin-left: auto;
+    min-width: 0;
+}
+.legal-header .legal-lang {
+    margin-left: 0;
+    flex-shrink: 0;
+}
+.legal-header .btn-call {
+    flex-shrink: 0;
+}
 .legal-lang button {
     border: 1px solid var(--line);
     border-radius: 999px;
@@ -856,6 +874,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
     border-radius: var(--radius);
     box-shadow: var(--shadow-sm);
     padding: clamp(1.4rem, 4vw, 2.5rem);
+    overflow-wrap: anywhere;
 }
 .legal-card h2 {
     font-size: clamp(1.25rem, 2.5vw, 1.6rem);
@@ -869,6 +888,66 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
     border-radius: 4px;
     padding: .08rem .35rem;
     color: var(--ink);
+    white-space: normal;
+}
+
+@media (max-width: 640px) {
+    .legal-header__inner {
+        justify-content: center;
+        gap: .65rem;
+        padding: .75rem 1rem;
+    }
+    .legal-header .logo {
+        justify-content: center;
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+    .legal-header .logo-mark {
+        font-size: 1.5rem;
+    }
+    .legal-header .logo-text {
+        min-width: 0;
+    }
+    .legal-header .logo-title {
+        font-size: 1.05rem;
+        overflow-wrap: anywhere;
+    }
+    .legal-header .logo-sub {
+        font-size: .9rem;
+    }
+    .legal-actions {
+        width: 100%;
+        justify-content: center;
+        gap: .5rem;
+    }
+    .legal-lang {
+        gap: .25rem;
+    }
+    .legal-lang button {
+        padding: .38rem .5rem;
+        font-size: .72rem;
+    }
+    .legal-header .btn-call {
+        padding: .55rem .85rem;
+        font-size: .84rem;
+        white-space: normal;
+    }
+    .legal-page {
+        padding: 2.25rem 0;
+    }
+    .legal-card {
+        padding: 1.1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .legal-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .legal-header .btn-call {
+        width: 100%;
+    }
 }
 
 /* ---------- Lightbox ---------- */
