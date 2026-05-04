@@ -82,6 +82,9 @@
             'contact.phone':   'Telefono',
             'contact.hours':   'Orari di apertura',
             'contact.italy':   'Italia',
+            'map.consent':     'La mappa viene caricata da Google solo dopo il tuo consenso.',
+            'map.load':        'Carica mappa',
+            'map.open':        'Apri in Google Maps',
 
             /* Giorni */
             'day.mon': 'Lunedì',   'day.tue': 'Martedì',  'day.wed': 'Mercoledì',
@@ -309,6 +312,9 @@
             'contact.phone':   'Phone',
             'contact.hours':   'Opening hours',
             'contact.italy':   'Italy',
+            'map.consent':     'The map is loaded from Google only after your consent.',
+            'map.load':        'Load map',
+            'map.open':        'Open in Google Maps',
 
             'day.mon': 'Monday',    'day.tue': 'Tuesday',   'day.wed': 'Wednesday',
             'day.thu': 'Thursday',  'day.fri': 'Friday',    'day.sat': 'Saturday',
@@ -532,6 +538,9 @@
             'contact.phone':   'Telefon',
             'contact.hours':   'Öffnungszeiten',
             'contact.italy':   'Italien',
+            'map.consent':     'Die Karte wird erst nach deiner Zustimmung von Google geladen.',
+            'map.load':        'Karte laden',
+            'map.open':        'In Google Maps öffnen',
 
             'day.mon': 'Montag',     'day.tue': 'Dienstag',  'day.wed': 'Mittwoch',
             'day.thu': 'Donnerstag', 'day.fri': 'Freitag',   'day.sat': 'Samstag',
@@ -755,6 +764,9 @@
             'contact.phone':   'Téléphone',
             'contact.hours':   'Heures d\'ouverture',
             'contact.italy':   'Italie',
+            'map.consent':     'La carte est chargée depuis Google uniquement après votre consentement.',
+            'map.load':        'Charger la carte',
+            'map.open':        'Ouvrir dans Google Maps',
 
             'day.mon': 'Lundi',    'day.tue': 'Mardi',    'day.wed': 'Mercredi',
             'day.thu': 'Jeudi',    'day.fri': 'Vendredi', 'day.sat': 'Samedi',
