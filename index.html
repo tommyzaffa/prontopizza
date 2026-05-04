@@ -354,16 +354,16 @@
         </div>
 
         <div class="contact-map">
-            <iframe
-                src="https://www.google.com/maps?q=Via+Giuseppe+Garibaldi+31,+22018+Porlezza+CO&output=embed"
-                width="100%"
-                height="100%"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                title="Mappa Pronto Pizza, Via Garibaldi 31, Porlezza">
-            </iframe>
+            <div class="map-consent" data-map-src="https://www.google.com/maps?q=Via+Giuseppe+Garibaldi+31,+22018+Porlezza+CO&amp;output=embed" data-map-title="Mappa Pronto Pizza, Via Garibaldi 31, Porlezza">
+                <div class="map-consent__box">
+                    <h3>Google Maps</h3>
+                    <p>La mappa viene caricata da Google solo dopo il tuo consenso.</p>
+                    <div class="map-consent__actions">
+                        <button type="button" class="btn btn-primary js-load-map">Carica mappa</button>
+                        <a href="https://maps.google.com/?q=Via+Giuseppe+Garibaldi+31,+22018+Porlezza+CO" target="_blank" rel="noopener">Apri in Google Maps</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -395,6 +395,7 @@
     <div class="container footer-bottom">
         <p>© <span id="year">2026</span> Pronto Pizza da Fabio — Via Garibaldi 31, Porlezza (CO). <span data-i18n="footer.rights">Tutti i diritti riservati.</span></p>
         <p style="margin-top:0.4rem;font-size:0.8rem;color:var(--ink-soft,#888)" data-i18n-html="footer.developed">Sito sviluppato da <a href="https://tommyzaffa.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Thomas Zaffalon</a></p>
+        <p class="footer-legal"><a href="privacy.html">Privacy &amp; Cookie Policy</a></p>
     </div>
 </footer>
 

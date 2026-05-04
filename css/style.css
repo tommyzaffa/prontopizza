@@ -732,6 +732,37 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
     min-height: 400px;
     border: 6px solid #fff;
 }
+.map-consent {
+    min-height: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    background:
+        linear-gradient(rgba(44, 33, 24, .72), rgba(44, 33, 24, .72)),
+        radial-gradient(circle at 30% 20%, rgba(232, 178, 76, .35), transparent 42%),
+        var(--green-dark);
+    color: var(--cream);
+}
+.map-consent iframe {
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    border: 0;
+}
+.map-consent__box { max-width: 420px; }
+.map-consent__box h3 { color: var(--yellow); margin-bottom: .5rem; }
+.map-consent__box p { margin-bottom: 1.2rem; color: rgba(246, 239, 224, .88); }
+.map-consent__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.map-consent__actions a { color: var(--yellow); text-decoration: underline; }
 
 /* ---------- Sticky call (mobile) ---------- */
 .sticky-call {
@@ -789,6 +820,35 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
     text-align: center;
     font-size: .85rem;
     color: rgba(246, 239, 224, 0.6);
+}
+.footer-legal { margin-top: .45rem; font-size: .82rem; }
+
+/* ---------- Legal page ---------- */
+.legal-page {
+    padding: 4rem 0;
+    background: var(--paper);
+}
+.legal-wrap { max-width: 880px; }
+.legal-updated { color: var(--ink-soft); margin: .5rem 0 2rem; }
+.legal-card {
+    background: rgba(255, 255, 255, .58);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    padding: clamp(1.4rem, 4vw, 2.5rem);
+}
+.legal-card h2 {
+    font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+    margin: 1.8rem 0 .65rem;
+}
+.legal-card h2:first-child { margin-top: 0; }
+.legal-card p { color: var(--ink-soft); margin-bottom: 1rem; }
+.legal-card code {
+    background: var(--cream-2);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: .08rem .35rem;
+    color: var(--ink);
 }
 
 /* ---------- Lightbox ---------- */

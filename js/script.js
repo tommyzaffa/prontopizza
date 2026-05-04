@@ -104,6 +104,23 @@
     const year = document.getElementById('year');
     if (year) year.textContent = new Date().getFullYear();
 
+    // ---------- Third-party maps: load only after click ----------
+    document.querySelectorAll('[data-map-src]').forEach(mapBox => {
+        const button = mapBox.querySelector('.js-load-map');
+        if (!button) return;
+
+        button.addEventListener('click', () => {
+            const iframe = document.createElement('iframe');
+            iframe.src = mapBox.dataset.mapSrc;
+            iframe.title = mapBox.dataset.mapTitle || 'Mappa';
+            iframe.loading = 'lazy';
+            iframe.referrerPolicy = 'no-referrer-when-downgrade';
+            iframe.allowFullscreen = true;
+            mapBox.replaceChildren(iframe);
+            mapBox.classList.add('is-loaded');
+        });
+    });
+
     // ---------- Scroll reveal (leggero) ----------
     if ('IntersectionObserver' in window) {
         const revealEls = document.querySelectorAll('.section, .menu-card, .gallery-item, .feature');
