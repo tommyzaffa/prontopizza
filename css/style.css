@@ -824,6 +824,26 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
 .footer-legal { margin-top: .45rem; font-size: .82rem; }
 
 /* ---------- Legal page ---------- */
+.legal-lang {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    margin-left: auto;
+}
+.legal-lang button {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: .45rem .65rem;
+    background: rgba(251, 247, 236, .72);
+    color: var(--ink);
+    font-size: .78rem;
+    font-weight: 700;
+}
+.legal-lang button.is-active {
+    background: var(--red);
+    border-color: var(--red);
+    color: #fff;
+}
 .legal-page {
     padding: 4rem 0;
     background: var(--paper);
