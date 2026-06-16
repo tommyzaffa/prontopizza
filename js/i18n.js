@@ -60,6 +60,9 @@
             'gallery.eyebrow': 'Galleria',
             'gallery.title':   'Dentro il locale',
             'gallery.sub':     'Tavoli ravvicinati, lavagne scritte a mano, cucina a vista. Entra e respira l\'aria di casa.',
+            'video.eyebrow':   'Un momento di casa',
+            'video.title':     'Quando Fabio attacca a cantare',
+            'video.sub':       'Capita che, a fine serata, Fabio prenda il microfono e parta una canzone insieme ai clienti. Niente di che — ma è proprio questa l\'aria di casa.',
 
             /* Recensioni */
             'nav.reviews':          'Recensioni',
@@ -291,6 +294,9 @@
             'gallery.eyebrow': 'Gallery',
             'gallery.title':   'Inside the restaurant',
             'gallery.sub':     'Close-set tables, hand-written chalkboards, open kitchen. Come in and breathe the home atmosphere.',
+            'video.eyebrow':   'A moment at home',
+            'video.title':     'When Fabio starts to sing',
+            'video.sub':       'Now and then, at the end of the evening, Fabio grabs the mic and breaks into a song with the guests. Nothing fancy — but this is exactly the home atmosphere.',
 
             /* Reviews */
             'nav.reviews':          'Reviews',
@@ -517,6 +523,9 @@
             'gallery.eyebrow': 'Galerie',
             'gallery.title':   'Im Lokal',
             'gallery.sub':     'Eng gestellte Tische, handgeschriebene Tafeln, offene Küche. Kommen Sie rein und genießen Sie die familiäre Atmosphäre.',
+            'video.eyebrow':   'Ein Stück Zuhause',
+            'video.title':     'Wenn Fabio zu singen anfängt',
+            'video.sub':       'Manchmal greift Fabio am Ende des Abends zum Mikrofon und stimmt mit den Gästen ein Lied an. Nichts Besonderes — aber genau das ist die familiäre Atmosphäre.',
 
             /* Bewertungen */
             'nav.reviews':          'Bewertungen',
@@ -743,6 +752,9 @@
             'gallery.eyebrow': 'Galerie',
             'gallery.title':   'À l\'intérieur',
             'gallery.sub':     'Tables serrées, ardoises écrites à la main, cuisine ouverte. Entrez et respirez l\'air de la maison.',
+            'video.eyebrow':   'Un air de maison',
+            'video.title':     'Quand Fabio se met à chanter',
+            'video.sub':       'Il arrive qu\'en fin de soirée, Fabio prenne le micro et entonne une chanson avec les clients. Rien d\'extraordinaire — mais c\'est justement ça, l\'air de la maison.',
 
             /* Avis */
             'nav.reviews':          'Avis',

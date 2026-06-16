@@ -540,6 +540,32 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.4rem); }
 .gallery {
     background: linear-gradient(180deg, var(--paper) 0%, var(--cream-2) 100%);
 }
+
+/* ---------- Video (Fabio che canta) ---------- */
+.video-section {
+    background: var(--cream-2);
+}
+.video-frame {
+    max-width: 320px;
+    margin: 0 auto;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background: #000;
+    border: 6px solid #fff;
+    transform: rotate(-1deg);
+    transition: transform .3s ease;
+}
+.video-frame:hover {
+    transform: rotate(0);
+}
+.video-player {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 478 / 850;
+    background: #000;
+}
 .gallery-grid {
     display: grid;
     gap: 1rem;
